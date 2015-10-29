@@ -1,0 +1,2 @@
+debian/bin/faucetd usr/bin
+src/faucetd usr/lib/faucet

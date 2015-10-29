@@ -1,0 +1,9 @@
+Building Faucet
+
+See doc/readme-qt.rst for instructions on building Faucet QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Faucet.
+
+See doc/build-*.txt for instructions on building Faucetd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Faucet.
