@@ -11,6 +11,8 @@ class TransactionView;
 class OverviewPage;
 class AddressBookPage;
 class SendCoinsDialog;
+class BlockBrowser;
+class StatisticsPage;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
@@ -64,6 +66,8 @@ private:
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
+    StatisticsPage *statisticsPage;
+    BlockBrowser *blockBrowser;
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     QLabel *labelEncryptionIcon;
@@ -79,6 +83,8 @@ private:
     QAction *quitAction;
     QAction *sendCoinsAction;
     QAction *addressBookAction;
+    QAction *statisticsAction;
+    QAction *blockAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
@@ -145,6 +151,10 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
+    /** Switch to statistics page*/
+    void gotoStatisticsPage();
+    /** Switch to block explorer*/
+    void gotoBlockBrowser();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
